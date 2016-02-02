@@ -3,30 +3,72 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Norfolk Roots Midwives</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <meta name="theme-color" content="#ffffff">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>
+          body {
+            margin: 0;
+          }
+
+          .screen-sm {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          }
+
+          .screen-sm .logo {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+
+          }
+
+          .screen-lg {
+            display: none;
+
+          }
+
+          @media screen and (min-width: 1024px) {
+            .screen-lg {
+              display: flex;
+              height: 100vh;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .screen-lg .logo {
+              max-width: 100%;
+            }
+            .screen-sm {
+              display: none;
+            }
+          }
+
+        </style>
+
     </head>
     <body>
-        <!--[if lt IE 8]>
+        <!--[if IE]>>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+        <div class="section screen-lg">
+          <img class="logo" src="img/logo-w-text-lg.png" alt="Norfolk Roots Midwives - 519-428-1414">
+        </div>
+        <div class="section screen-sm">
+          <img src="img/logo.png" alt="" class="logo">
+          <img class="logo" src="img/text.png" alt="Norfolk Roots Midwives - 519-428-1414">
+        </div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -34,7 +76,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-73253209-1','auto');ga('send','pageview');
         </script>
     </body>
 </html>
